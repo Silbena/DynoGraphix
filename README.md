@@ -16,6 +16,6 @@ Each type of plot was prepared for:
 
 Bonus bar plot showing the impact of **Soviet-Afghan War** on the population of Afganistan in comparison to the other countires of the region. The plot is produced by **change.py**.
 
-<p style="text-align: center;">
+<div align="center">
   <img src="plots/change/soviet_afghan.gif" width="48%">
-</p>
+</div>
