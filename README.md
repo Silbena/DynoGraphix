@@ -14,7 +14,7 @@ Each type of plot was prepared for:
 - 5 closely populated countries,
 - Poland and 4 closely populated countries.
 
-Bonus bar plot showing the impact of **Soviet-Afghan War** on the population of Afganistan in comparison to the other countires of the region. The plot is produced by **change.py**.
+Bonus bar plot showing the impact of **Soviet-Afghan War** on the population of Afghanistan in comparison to the other countires of the region. The plot is produced by **change.py**.
 
 <div align="center">
   <img src="plots/change/soviet_afghan.gif" width="50%">
