@@ -1,6 +1,6 @@
 # World population animated vizualizations
 
-Plots were made in Python with matplotlib animation and stored in a GIF format. Scipts producing the plots can be found in **scripts** directory. Data preparation was done with pandas in **filter_data.py**. For comparison of the plots see **summary.md**.
+Plots were made in Python with matplotlib animation and stored in a GIF format. Scipts producing the plots can be found in **scripts** directory. Data preparation was done with pandas in **filter_data.py**. For comparison of the plots see the **summary.md**.
 
 Types of plots:
 - bar (colored),
