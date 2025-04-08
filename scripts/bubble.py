@@ -4,6 +4,7 @@ import seaborn as sns
 from matplotlib.animation import FuncAnimation
 import line_bar as lb
 
+
 def density(country_code, populations):
     sizes = {'IND': 3287263, 'CHN': 9596961 , 'USA': 9525067, 'IDN': 1904569, 'PAK': 907132,
               'POL': 312696, 'VNM':331212, 'IRN': 1648195, 'TUR': 783562, 'DEU': 357114, 'THA': 513120,
@@ -13,6 +14,7 @@ def density(country_code, populations):
     dens = populations/size
 
     return dens 
+
 
 def bubble_data(df, biggest: bool):
 
@@ -38,9 +40,10 @@ def bubble_data(df, biggest: bool):
     country_data.append(populations)
     country_data.append(densities)
 
-    y_lim = lb.max_pop(picked)*1.3
+    y_lim = lb.max_pop(picked) * 1.3
 
     return years, countries, country_data, y_lim
+
 
 def style_bubble(title: str, y_lim: float):
 
@@ -54,6 +57,7 @@ def style_bubble(title: str, y_lim: float):
     plt.ylim(0, y_lim)
 
     return year
+
 
 def bubble_gif(df, title:str, file: str, biggest:bool):
 
@@ -74,6 +78,7 @@ def bubble_gif(df, title:str, file: str, biggest:bool):
     anim = FuncAnimation(fig, animate, frames=len(x_data), interval = 100)
     anim.save(f'plots/bubble/{file}.gif', dpi = 100)
 
+
 def prep_data(df):
     ordered = df.sort_values(by = '2022', ascending = False, ignore_index = True)
     poland = ordered[ordered['Country Name'] == 'Poland'].index[0]
@@ -82,8 +87,8 @@ def prep_data(df):
 
     return poland_2022, some_countries     
 
-def main():
 
+def main():
     lb.make_dir('plots/bubble')
     df = pd.read_csv('data/filtered.csv')
     poland_2022, some_countries = prep_data(df)
@@ -91,6 +96,7 @@ def main():
     bubble_gif(df, 'Most Populated countries', 'most_pop_b', True) 
     bubble_gif(some_countries,'Closely populated countries', 'random_b', False)
     bubble_gif(poland_2022,'Poland and closely populated countries', 'poland_b', False)
+
 
 if __name__ == "__main__":
     main()
