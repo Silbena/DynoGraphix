@@ -14,4 +14,4 @@ Each type of plot was prepared for:
 - 5 closely populated countries,
 - Poland and 4 closely populated countries.
 
-**Additional plot:** Bar plot showing the impact of Soviet-Afghan War on the population of Afganistan in comparison to other countires of the region.
+Additionaly there is a bar plot showing the impact of **Soviet-Afghan War** on the population of Afganistan in comparison to other countires of the region.
